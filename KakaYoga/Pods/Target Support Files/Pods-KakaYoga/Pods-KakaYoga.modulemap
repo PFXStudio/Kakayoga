@@ -1,0 +1,6 @@
+framework module Pods_KakaYoga {
+  umbrella header "Pods-KakaYoga-umbrella.h"
+
+  export *
+  module * { export * }
+}

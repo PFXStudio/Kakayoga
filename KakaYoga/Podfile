@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'KakaYoga' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxDataSources'
+
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+  pod 'SwiftLint'
+  pod 'SwiftMessages'
+  pod 'NVActivityIndicatorView'
+  pod 'TextureSwiftSupport'
+  #bind
+  pod 'RxCocoa-Texture', :git => 'https://github.com/PFXStudio/RxCocoa-Texture.git'
+  #tap
+  pod 'GTTexture-RxExtension', :git => 'https://github.com/PFXStudio/GTTexture-RxExtension.git'
+
+
+  # Pods for KakaYoga
+
+  target 'KakaYogaTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'KakaYogaUITests' do
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28B14AFCD5FB69401B0669A3 /* Pods_KakaYogaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381BCBE0C54957F6C5FB1C0D /* Pods_KakaYogaTests.framework */; };
+		897A8FC9D226C1BBD3E5615C /* Pods_KakaYoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6869BC833F21741D3EFB4854 /* Pods_KakaYoga.framework */; };
+		B01613AD2654DB7F006398C5 /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01613AC2654DB7F006398C5 /* ProfileTableViewController.swift */; };
+		B01613AF2654DE2F006398C5 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01613AE2654DE2F006398C5 /* ProfileInfo.swift */; };
+		B01613B12654DEC4006398C5 /* ProfileCellNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01613B02654DEC4006398C5 /* ProfileCellNode.swift */; };
+		B01613B52654E18E006398C5 /* names.json in Resources */ = {isa = PBXBuildFile; fileRef = B01613B42654E18E006398C5 /* names.json */; };
+		B01613B72654ED3B006398C5 /* images.json in Resources */ = {isa = PBXBuildFile; fileRef = B01613B62654ED3B006398C5 /* images.json */; };
+		B01613B92654EFDA006398C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01613B82654EFDA006398C5 /* ProfileViewController.swift */; };
+		B01613BB2654FBCE006398C5 /* PostNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01613BA2654FBCE006398C5 /* PostNode.swift */; };
+		B0C65AF42654D64400C050F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C65AF32654D64400C050F6 /* AppDelegate.swift */; };
+		B0C65AFD2654D64400C050F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C65AFC2654D64400C050F6 /* Assets.xcassets */; };
+		B0C65B002654D64400C050F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C65AFE2654D64400C050F6 /* LaunchScreen.storyboard */; };
+		B0C65B0B2654D64400C050F6 /* KakaYogaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C65B0A2654D64400C050F6 /* KakaYogaTests.swift */; };
+		B0C65B162654D64400C050F6 /* KakaYogaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C65B152654D64400C050F6 /* KakaYogaUITests.swift */; };
+		E1C3DDC5C3901F2B998F1188 /* Pods_KakaYoga_KakaYogaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD146EEC919F01FC835AE3B /* Pods_KakaYoga_KakaYogaUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0C65B072654D64400C050F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C65AE82654D64400C050F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C65AEF2654D64400C050F6;
+			remoteInfo = KakaYoga;
+		};
+		B0C65B122654D64400C050F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0C65AE82654D64400C050F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0C65AEF2654D64400C050F6;
+			remoteInfo = KakaYoga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BCB4EB8234A19C5A3E4F926 /* Pods-KakaYogaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaYogaTests.release.xcconfig"; path = "Target Support Files/Pods-KakaYogaTests/Pods-KakaYogaTests.release.xcconfig"; sourceTree = "<group>"; };
+		381BCBE0C54957F6C5FB1C0D /* Pods_KakaYogaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaYogaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B6CC6C8A5D8B31989B012A /* Pods-KakaYoga-KakaYogaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaYoga-KakaYogaUITests.release.xcconfig"; path = "Target Support Files/Pods-KakaYoga-KakaYogaUITests/Pods-KakaYoga-KakaYogaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6869BC833F21741D3EFB4854 /* Pods_KakaYoga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaYoga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72C584E988F2C73C78BCCDF0 /* Pods-KakaYoga-KakaYogaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaYoga-KakaYogaUITests.debug.xcconfig"; path = "Target Support Files/Pods-KakaYoga-KakaYogaUITests/Pods-KakaYoga-KakaYogaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8DD146EEC919F01FC835AE3B /* Pods_KakaYoga_KakaYogaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaYoga_KakaYogaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B01613AC2654DB7F006398C5 /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		B01613AE2654DE2F006398C5 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
+		B01613B02654DEC4006398C5 /* ProfileCellNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellNode.swift; sourceTree = "<group>"; };
+		B01613B42654E18E006398C5 /* names.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = names.json; sourceTree = "<group>"; };
+		B01613B62654ED3B006398C5 /* images.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = images.json; sourceTree = "<group>"; };
+		B01613B82654EFDA006398C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B01613BA2654FBCE006398C5 /* PostNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNode.swift; sourceTree = "<group>"; };
+		B0C65AF02654D64400C050F6 /* KakaYoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaYoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C65AF32654D64400C050F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0C65AFC2654D64400C050F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0C65AFF2654D64400C050F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B0C65B012654D64400C050F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C65B062654D64400C050F6 /* KakaYogaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaYogaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C65B0A2654D64400C050F6 /* KakaYogaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaYogaTests.swift; sourceTree = "<group>"; };
+		B0C65B0C2654D64400C050F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0C65B112654D64400C050F6 /* KakaYogaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KakaYogaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0C65B152654D64400C050F6 /* KakaYogaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaYogaUITests.swift; sourceTree = "<group>"; };
+		B0C65B172654D64400C050F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF7C891DC1A533C94BA09FD3 /* Pods-KakaYoga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaYoga.debug.xcconfig"; path = "Target Support Files/Pods-KakaYoga/Pods-KakaYoga.debug.xcconfig"; sourceTree = "<group>"; };
+		DFBE7B8091F446D1FCDCFB9D /* Pods-KakaYoga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaYoga.release.xcconfig"; path = "Target Support Files/Pods-KakaYoga/Pods-KakaYoga.release.xcconfig"; sourceTree = "<group>"; };
+		F90D3B501543DAC5695DFE8A /* Pods-KakaYogaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaYogaTests.debug.xcconfig"; path = "Target Support Files/Pods-KakaYogaTests/Pods-KakaYogaTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0C65AED2654D64400C050F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897A8FC9D226C1BBD3E5615C /* Pods_KakaYoga.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C65B032654D64400C050F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B14AFCD5FB69401B0669A3 /* Pods_KakaYogaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C65B0E2654D64400C050F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C3DDC5C3901F2B998F1188 /* Pods_KakaYoga_KakaYogaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91535AE4499504C28D59C37C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF7C891DC1A533C94BA09FD3 /* Pods-KakaYoga.debug.xcconfig */,
+				DFBE7B8091F446D1FCDCFB9D /* Pods-KakaYoga.release.xcconfig */,
+				72C584E988F2C73C78BCCDF0 /* Pods-KakaYoga-KakaYogaUITests.debug.xcconfig */,
+				53B6CC6C8A5D8B31989B012A /* Pods-KakaYoga-KakaYogaUITests.release.xcconfig */,
+				F90D3B501543DAC5695DFE8A /* Pods-KakaYogaTests.debug.xcconfig */,
+				2BCB4EB8234A19C5A3E4F926 /* Pods-KakaYogaTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A767CFBDBB5DF196B57CDF68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6869BC833F21741D3EFB4854 /* Pods_KakaYoga.framework */,
+				8DD146EEC919F01FC835AE3B /* Pods_KakaYoga_KakaYogaUITests.framework */,
+				381BCBE0C54957F6C5FB1C0D /* Pods_KakaYogaTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B01613AB2654DB71006398C5 /* Profiles */ = {
+			isa = PBXGroup;
+			children = (
+				B01613BA2654FBCE006398C5 /* PostNode.swift */,
+				B01613B02654DEC4006398C5 /* ProfileCellNode.swift */,
+				B01613AE2654DE2F006398C5 /* ProfileInfo.swift */,
+				B01613AC2654DB7F006398C5 /* ProfileTableViewController.swift */,
+				B01613B82654EFDA006398C5 /* ProfileViewController.swift */,
+			);
+			path = Profiles;
+			sourceTree = "<group>";
+		};
+		B01613B22654E17A006398C5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0C65AFC2654D64400C050F6 /* Assets.xcassets */,
+				B01613B32654E180006398C5 /* Files */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B01613B32654E180006398C5 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				B01613B42654E18E006398C5 /* names.json */,
+				B01613B62654ED3B006398C5 /* images.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		B0C65AE72654D64400C050F6 = {
+			isa = PBXGroup;
+			children = (
+				B0C65AF22654D64400C050F6 /* KakaYoga */,
+				B0C65B092654D64400C050F6 /* KakaYogaTests */,
+				B0C65B142654D64400C050F6 /* KakaYogaUITests */,
+				B0C65AF12654D64400C050F6 /* Products */,
+				91535AE4499504C28D59C37C /* Pods */,
+				A767CFBDBB5DF196B57CDF68 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B0C65AF12654D64400C050F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0C65AF02654D64400C050F6 /* KakaYoga.app */,
+				B0C65B062654D64400C050F6 /* KakaYogaTests.xctest */,
+				B0C65B112654D64400C050F6 /* KakaYogaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B0C65AF22654D64400C050F6 /* KakaYoga */ = {
+			isa = PBXGroup;
+			children = (
+				B01613B22654E17A006398C5 /* Resources */,
+				B0C65AF32654D64400C050F6 /* AppDelegate.swift */,
+				B0C65B012654D64400C050F6 /* Info.plist */,
+				B0C65AFE2654D64400C050F6 /* LaunchScreen.storyboard */,
+				B01613AB2654DB71006398C5 /* Profiles */,
+			);
+			path = KakaYoga;
+			sourceTree = "<group>";
+		};
+		B0C65B092654D64400C050F6 /* KakaYogaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B0C65B0A2654D64400C050F6 /* KakaYogaTests.swift */,
+				B0C65B0C2654D64400C050F6 /* Info.plist */,
+			);
+			path = KakaYogaTests;
+			sourceTree = "<group>";
+		};
+		B0C65B142654D64400C050F6 /* KakaYogaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B0C65B152654D64400C050F6 /* KakaYogaUITests.swift */,
+				B0C65B172654D64400C050F6 /* Info.plist */,
+			);
+			path = KakaYogaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0C65AEF2654D64400C050F6 /* KakaYoga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C65B1A2654D64400C050F6 /* Build configuration list for PBXNativeTarget "KakaYoga" */;
+			buildPhases = (
+				CBDA64A83055B6695D9CC1B1 /* [CP] Check Pods Manifest.lock */,
+				B0C65AEC2654D64400C050F6 /* Sources */,
+				B0C65AED2654D64400C050F6 /* Frameworks */,
+				B0C65AEE2654D64400C050F6 /* Resources */,
+				84D26F07893C331B4540C7BE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaYoga;
+			productName = KakaYoga;
+			productReference = B0C65AF02654D64400C050F6 /* KakaYoga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B0C65B052654D64400C050F6 /* KakaYogaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C65B1D2654D64400C050F6 /* Build configuration list for PBXNativeTarget "KakaYogaTests" */;
+			buildPhases = (
+				CB34FDFED27DB3B7E67AB7BB /* [CP] Check Pods Manifest.lock */,
+				B0C65B022654D64400C050F6 /* Sources */,
+				B0C65B032654D64400C050F6 /* Frameworks */,
+				B0C65B042654D64400C050F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0C65B082654D64400C050F6 /* PBXTargetDependency */,
+			);
+			name = KakaYogaTests;
+			productName = KakaYogaTests;
+			productReference = B0C65B062654D64400C050F6 /* KakaYogaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B0C65B102654D64400C050F6 /* KakaYogaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0C65B202654D64400C050F6 /* Build configuration list for PBXNativeTarget "KakaYogaUITests" */;
+			buildPhases = (
+				8CEFA223D9F3A515E68A4A78 /* [CP] Check Pods Manifest.lock */,
+				B0C65B0D2654D64400C050F6 /* Sources */,
+				B0C65B0E2654D64400C050F6 /* Frameworks */,
+				B0C65B0F2654D64400C050F6 /* Resources */,
+				ED17D606F68D8476B62092D1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0C65B132654D64400C050F6 /* PBXTargetDependency */,
+			);
+			name = KakaYogaUITests;
+			productName = KakaYogaUITests;
+			productReference = B0C65B112654D64400C050F6 /* KakaYogaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0C65AE82654D64400C050F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B0C65AEF2654D64400C050F6 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					B0C65B052654D64400C050F6 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B0C65AEF2654D64400C050F6;
+					};
+					B0C65B102654D64400C050F6 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = B0C65AEF2654D64400C050F6;
+					};
+				};
+			};
+			buildConfigurationList = B0C65AEB2654D64400C050F6 /* Build configuration list for PBXProject "KakaYoga" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0C65AE72654D64400C050F6;
+			productRefGroup = B0C65AF12654D64400C050F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0C65AEF2654D64400C050F6 /* KakaYoga */,
+				B0C65B052654D64400C050F6 /* KakaYogaTests */,
+				B0C65B102654D64400C050F6 /* KakaYogaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0C65AEE2654D64400C050F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C65B002654D64400C050F6 /* LaunchScreen.storyboard in Resources */,
+				B0C65AFD2654D64400C050F6 /* Assets.xcassets in Resources */,
+				B01613B72654ED3B006398C5 /* images.json in Resources */,
+				B01613B52654E18E006398C5 /* names.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C65B042654D64400C050F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C65B0F2654D64400C050F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84D26F07893C331B4540C7BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaYoga/Pods-KakaYoga-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaYoga/Pods-KakaYoga-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaYoga/Pods-KakaYoga-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CEFA223D9F3A515E68A4A78 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaYoga-KakaYogaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB34FDFED27DB3B7E67AB7BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaYogaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBDA64A83055B6695D9CC1B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaYoga-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED17D606F68D8476B62092D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaYoga-KakaYogaUITests/Pods-KakaYoga-KakaYogaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaYoga-KakaYogaUITests/Pods-KakaYoga-KakaYogaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaYoga-KakaYogaUITests/Pods-KakaYoga-KakaYogaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0C65AEC2654D64400C050F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01613AD2654DB7F006398C5 /* ProfileTableViewController.swift in Sources */,
+				B01613BB2654FBCE006398C5 /* PostNode.swift in Sources */,
+				B01613B12654DEC4006398C5 /* ProfileCellNode.swift in Sources */,
+				B01613B92654EFDA006398C5 /* ProfileViewController.swift in Sources */,
+				B01613AF2654DE2F006398C5 /* ProfileInfo.swift in Sources */,
+				B0C65AF42654D64400C050F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C65B022654D64400C050F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C65B0B2654D64400C050F6 /* KakaYogaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0C65B0D2654D64400C050F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0C65B162654D64400C050F6 /* KakaYogaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0C65B082654D64400C050F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0C65AEF2654D64400C050F6 /* KakaYoga */;
+			targetProxy = B0C65B072654D64400C050F6 /* PBXContainerItemProxy */;
+		};
+		B0C65B132654D64400C050F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0C65AEF2654D64400C050F6 /* KakaYoga */;
+			targetProxy = B0C65B122654D64400C050F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B0C65AFE2654D64400C050F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0C65AFF2654D64400C050F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B0C65B182654D64400C050F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B0C65B192654D64400C050F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B0C65B1B2654D64400C050F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF7C891DC1A533C94BA09FD3 /* Pods-KakaYoga.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaYoga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyon.KakaYoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B0C65B1C2654D64400C050F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFBE7B8091F446D1FCDCFB9D /* Pods-KakaYoga.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaYoga/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyon.KakaYoga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B0C65B1E2654D64400C050F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F90D3B501543DAC5695DFE8A /* Pods-KakaYogaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaYogaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyon.KakaYogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaYoga.app/KakaYoga";
+			};
+			name = Debug;
+		};
+		B0C65B1F2654D64400C050F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BCB4EB8234A19C5A3E4F926 /* Pods-KakaYogaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaYogaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyon.KakaYogaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KakaYoga.app/KakaYoga";
+			};
+			name = Release;
+		};
+		B0C65B212654D64400C050F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72C584E988F2C73C78BCCDF0 /* Pods-KakaYoga-KakaYogaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaYogaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyon.KakaYogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KakaYoga;
+			};
+			name = Debug;
+		};
+		B0C65B222654D64400C050F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B6CC6C8A5D8B31989B012A /* Pods-KakaYoga-KakaYogaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KakaYogaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nyon.KakaYogaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KakaYoga;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0C65AEB2654D64400C050F6 /* Build configuration list for PBXProject "KakaYoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C65B182654D64400C050F6 /* Debug */,
+				B0C65B192654D64400C050F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C65B1A2654D64400C050F6 /* Build configuration list for PBXNativeTarget "KakaYoga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C65B1B2654D64400C050F6 /* Debug */,
+				B0C65B1C2654D64400C050F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C65B1D2654D64400C050F6 /* Build configuration list for PBXNativeTarget "KakaYogaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C65B1E2654D64400C050F6 /* Debug */,
+				B0C65B1F2654D64400C050F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0C65B202654D64400C050F6 /* Build configuration list for PBXNativeTarget "KakaYogaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0C65B212654D64400C050F6 /* Debug */,
+				B0C65B222654D64400C050F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B0C65AE82654D64400C050F6 /* Project object */;
+}
