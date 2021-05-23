@@ -16,6 +16,8 @@
 		B01613B72654ED3B006398C5 /* images.json in Resources */ = {isa = PBXBuildFile; fileRef = B01613B62654ED3B006398C5 /* images.json */; };
 		B01613B92654EFDA006398C5 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01613B82654EFDA006398C5 /* ProfileViewController.swift */; };
 		B01613BB2654FBCE006398C5 /* PostNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01613BA2654FBCE006398C5 /* PostNode.swift */; };
+		B0414C6E265A6C50001DB3C7 /* ProfileNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0414C6D265A6C50001DB3C7 /* ProfileNode.swift */; };
+		B0414C70265A6C56001DB3C7 /* ThumbnailNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0414C6F265A6C56001DB3C7 /* ThumbnailNode.swift */; };
 		B0C65AF42654D64400C050F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C65AF32654D64400C050F6 /* AppDelegate.swift */; };
 		B0C65AFD2654D64400C050F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0C65AFC2654D64400C050F6 /* Assets.xcassets */; };
 		B0C65B002654D64400C050F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0C65AFE2654D64400C050F6 /* LaunchScreen.storyboard */; };
@@ -55,6 +57,8 @@
 		B01613B62654ED3B006398C5 /* images.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = images.json; sourceTree = "<group>"; };
 		B01613B82654EFDA006398C5 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B01613BA2654FBCE006398C5 /* PostNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNode.swift; sourceTree = "<group>"; };
+		B0414C6D265A6C50001DB3C7 /* ProfileNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileNode.swift; sourceTree = "<group>"; };
+		B0414C6F265A6C56001DB3C7 /* ThumbnailNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailNode.swift; sourceTree = "<group>"; };
 		B0C65AF02654D64400C050F6 /* KakaYoga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaYoga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0C65AF32654D64400C050F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0C65AFC2654D64400C050F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,8 +132,10 @@
 				B01613BA2654FBCE006398C5 /* PostNode.swift */,
 				B01613B02654DEC4006398C5 /* ProfileCellNode.swift */,
 				B01613AE2654DE2F006398C5 /* ProfileInfo.swift */,
+				B0414C6D265A6C50001DB3C7 /* ProfileNode.swift */,
 				B01613AC2654DB7F006398C5 /* ProfileTableViewController.swift */,
 				B01613B82654EFDA006398C5 /* ProfileViewController.swift */,
+				B0414C6F265A6C56001DB3C7 /* ThumbnailNode.swift */,
 			);
 			path = Profiles;
 			sourceTree = "<group>";
@@ -443,10 +449,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0414C70265A6C56001DB3C7 /* ThumbnailNode.swift in Sources */,
 				B01613AD2654DB7F006398C5 /* ProfileTableViewController.swift in Sources */,
 				B01613BB2654FBCE006398C5 /* PostNode.swift in Sources */,
 				B01613B12654DEC4006398C5 /* ProfileCellNode.swift in Sources */,
 				B01613B92654EFDA006398C5 /* ProfileViewController.swift in Sources */,
+				B0414C6E265A6C50001DB3C7 /* ProfileNode.swift in Sources */,
 				B01613AF2654DE2F006398C5 /* ProfileInfo.swift in Sources */,
 				B0C65AF42654D64400C050F6 /* AppDelegate.swift in Sources */,
 			);

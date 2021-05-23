@@ -25,21 +25,12 @@ final class ProfileCellNode: ASCellNode {
         self.backgroundColor = .white
     }
     
-    private lazy var thumbnailNode = { () -> ASNetworkImageNode in
-        let node = ASNetworkImageNode()
-        node.url = self.profileInfo.thumbnailUrl
-        node.clipsToBounds = true
-        node.contentMode = .scaleAspectFill
-        node.cornerRadius = 8.0
-        return node
+    private lazy var thumbnailNode = { () -> ThumbnailNode in
+        ThumbnailNode(profileInfo: self.profileInfo)
     }()
-
-    private lazy var nameNode = { () -> ASTextNode in
-        let node = ASTextNode()
-        node.maximumNumberOfLines = 0
-        node.placeholderColor = Self.placeHolderColor
-        node.attributedText = NSAttributedString(string: self.profileInfo.name, attributes: Self.nameAttributes)
-        return node
+    
+    private lazy var profileNode = { () -> ProfileNode in
+        ProfileNode(profileInfo: self.profileInfo)
     }()
 
     private lazy var infoNode = { () -> ASTextNode in
@@ -64,27 +55,28 @@ extension ProfileCellNode {
     override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
         // HStackLayout
 //        return LayoutSpec {
-//            HStackLayout(spacing: 10, alignItems: .start) {
-//                self.thumbnailNode.height(50).width(50)
-//                VStackLayout(spacing: 5) {
-//                    self.nameNode
+//            VStackLayout {
+//                HStackLayout(spacing: 10) {
+//                    self.thumbnailNode.flexGrow(1)
+//                }
+//                HStackLayout(spacing: 10, justifyContent: .end) {
 //                    self.infoNode
 //                }
 //            }.padding(10)
 //        }
 
-        // TODO : postNode
+        // TODO : profileNode, postNode
         return LayoutSpec {
-            VStackLayout {
-                HStackLayout(spacing: 10, alignItems: .start) {
-                    self.thumbnailNode.height(50).width(50)
-                    self.nameNode
-                }.padding(10)
-                HStackLayout(justifyContent: .center) {
+            VStackLayout(spacing: 10, justifyContent: .center, alignItems: .center) {
+                HStackLayout(spacing: 10, justifyContent: .center) {
+                    self.profileNode
+                }
+                HStackLayout(spacing: 10, justifyContent: .center) {
                     self.postNode
-                }.padding(.bottom, 10)
-            }
+                }
+            }.padding(10)
         }
+
     }
 }
 
